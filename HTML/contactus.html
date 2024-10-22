@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Mind Connect</title>
+  <link rel="stylesheet" href="../CSS/contactus.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div id="logo">
+        <img src="../Images/logo.webp" alt="MindConnect">
+    </div>
+    <ul>
+        <li class="item"><a href="../HTML/index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+                <a href="../HTML/eventcalender.html">Event Calendar</a>
+                <a href="../HTML/communityforums.html">Community Forums</a>
+            </div>
+        </li>
+        <li class="item"><a href="../HTML/aboutus.html">About Us</a></li>
+        <li class="item"><a href="contactus.html">Contact Us</a></li>
+        <li class="item"><a href="../HTML/blog.html">Blog Post</a></li>
+
+
+    </ul>
+    <div id="nav-buttons">
+        <button class="login-btn" onclick="window.location.href='../HTML/login.html';">Login</button>
+        <button class="signup-btn" onclick="window.location.href='../HTML/signup.html';">SignUp</button>
+    </div>
+</nav>
+
+  <!-- Contact Us Form -->
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+  <script src="../JavaScript/contactus.js"></script>
+
+</body>
+</html>

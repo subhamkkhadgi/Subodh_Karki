@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Connect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/selection.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../Images/logo.webp" alt="MindConnect">
+        </div>
+        <ul>
+            <li class="item"><a href="../HTML/index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="../HTML/eventcalender.html">Event Calendar</a>
+                    <a href="../HTML/communityforums.html">Community Forums</a>
+                </div>
+            </li>
+            <li class="item"><a href="../HTML/aboutus.html">About Us</a></li>
+            <li class="item"><a href="contactus.html">Contact Us</a></li>
+            <li class="item"><a href="../HTML/blog.html">Blog Post</a></li>
+
+
+        </ul>
+        <div id="nav-buttons">
+            <button class="login-btn" onclick="window.location.href='../HTML/login.html';">Login</button>
+            <button class="signup-btn" onclick="window.location.href='../HTML/signup.html';">SignUp</button>
+        </div>
+    </nav>
+
+
+    <h1>Select the problem that you want to know about or you might be facing</h1>
+
+    <div class="problem-container">
+        <div class="problem-box" id="anxiety" onclick="selectProblem('anxiety')"><a
+                href="/HTML/Anxiety.html">Anxiety</a></div>
+        <div class="problem-box" id="depression" onclick="selectProblem('depression')"><a
+                href="/HTML/depression.html">Depression</a></div>
+        <div class="problem-box" id="stress" onclick="selectProblem('stress')"><a href="/HTML/stress.html">Stress</a>
+        </div>
+    </div>
+
+    <script src="../JavaScript/selection.js"></script>
+
+</body>
+
+</html>

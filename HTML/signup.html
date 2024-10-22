@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Connect - Signup</title>
+    <link rel="stylesheet" href="../CSS/signup.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../Images/logo.webp" alt="MindConnect">
+        </div>
+        <ul>
+            <li class="item"><a href="../HTML/index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="../HTML/eventcalender.html">Event Calendar</a>
+                    <a href="../HTML/communityforums.html">Community Forums</a>
+                </div>
+            </li>
+            <li class="item"><a href="../HTML/aboutus.html">About Us</a></li>
+            <li class="item"><a href="contactus.html">Contact Us</a></li>
+            <li class="item"><a href="../HTML/blog.html">Blog Post</a></li>
+
+
+        </ul>
+        <div id="nav-buttons">
+            <button class="login-btn" onclick="window.location.href='../HTML/login.html';">Login</button>
+            <button class="signup-btn" onclick="window.location.href='../HTML/signup.html';">SignUp</button>
+        </div>
+    </nav>
+
+<div class="container">
+    <div class="form-section">
+        <h2>Signup</h2>
+        <form action="/signup" method="POST">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            
+            <input type="submit" value="Signup">
+        </form>
+        <div class="login-link">
+            Already have an account? <a href="login.html">Login</a>
+        </div>
+        <div class="google-signup">
+            <a href="#">Continue with Google</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
